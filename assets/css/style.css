@@ -100,5 +100,35 @@ body {
   border-left-color: #2c7be5;
   transition: 0.3s ease;
 }
+.conf-section {
+  margin-top: 20px;
+}
+
+.conference {
+  background: #ffffff;
+  padding: 22px 26px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-left: 4px solid #e3e8ef;
+}
+
+.conference:hover {
+  border-left-color: #2c7be5;
+  transition: 0.3s ease;
+}
+
+.conference .title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.conference .venue {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
 
 
