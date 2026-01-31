@@ -86,4 +86,19 @@ body {
 .chart-section {
   margin-top: 60px;
 }
+.if {
+  color: #2c7be5;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.publication {
+  border-left: 4px solid #e3e8ef;
+}
+
+.publication:hover {
+  border-left-color: #2c7be5;
+  transition: 0.3s ease;
+}
+
 
