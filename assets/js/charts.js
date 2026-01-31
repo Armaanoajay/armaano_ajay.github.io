@@ -1,11 +1,27 @@
-// PIE CHART
-new Chart(document.getElementById("publicationPie"), {
-  type: "pie",
+const pieCtx = document.getElementById('publicationPie').getContext('2d');
+
+new Chart(pieCtx, {
+  type: 'pie',
   data: {
-    labels: ["Journal Publications", "Conference Presentations"],
+    labels: ['Journal Publications', 'Conference Presentations'],
     datasets: [{
       data: [11, 5],
-      backgroundColor: ["#1f77b4", "#ff7f0e"]
+      backgroundColor: [
+        'rgba(54, 99, 181, 0.85)',   // deep blue
+        'rgba(120, 170, 255, 0.85)' // soft blue
+      ],
+      borderWidth: 0
     }]
+  },
+  options: {
+    responsive: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          font: { size: 12 }
+        }
+      }
+    }
   }
 });
